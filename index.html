@@ -1,10 +1,41 @@
-<html>
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+        <link rel="stylesheet" href="src/styles.css">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Data-K</h1>   
+        </div>
+        <div class= "loginArea">
+            <input id="mailInput" type="text" placeholder="email">
+            <input id="passwordInput" type="text" placeholder="password">
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Register</button>
+            
+        </div>
+        <button id="logoutButton" class= "hidden">Logout</button>
+        
+       <form class="hidden" id ="formulario">
+            <h1>Rellena con tu nombre y apellido</h1>
+        <input type="text" name="firstname" class="nombre">
+        <input type="text" name="lastname" class="apellido">
+        <button id="saveButton">Guardar</button>
+        <button id="visualizar">visualizar</button>
+       </form>
+       <div class="hidden show">
+           <p class = "showName">Nombre</p>
+           <p class= "showlastname">Apellido</p>
+           <p class="showEmail"></p>
+           <p class="showID"></p>
+       </div>
 
-<body>
-  <h1>
-    Testing 101
-  </h1>
-  <script src="./src/index.js"></script>
+  <script src="src/App.js"></script>
 </body>
 
 </html>
